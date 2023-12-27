@@ -22,7 +22,7 @@ public class DirectConsumer {
 
         String EXCHANGE_NAME = "DIRECT_EXCHANGE";
         String BINDING_KEY_1 = "INFO";
-        String BINDING_KEY_2 = "WARNING";
+//        String BINDING_KEY_2 = "WARNING";
 
         try (Connection connection = factory.getFactory().newConnection(); Channel channel = connection.createChannel()) {
 
