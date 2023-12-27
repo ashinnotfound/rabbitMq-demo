@@ -27,6 +27,9 @@ public class DirectProducer {
 
             // direct, topic, headers, fanout
             channel.exchangeDeclare(EXCHANGE_NAME, "direct");
+            // topic模式是模糊的direct binding_key由单词.单词构成, 即 com.ashin, *.ashin.*, #.ashin
+            // * 对应一个单词
+            // # 对应任意单词
 
             String message = "direct-";
 
